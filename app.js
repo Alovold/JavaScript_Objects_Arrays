@@ -4,9 +4,9 @@ console.log("EXERCISE 1:\n==========\n");
 const numbers = [2, 22, 12, 17, 18, 39, 129];
 function arraySum (arr1) {
     let sum = 0;
-    for (let i = 0; i < arr1.length; i++) {
-        sum = sum + arr1[i];
-    }
+    arr1.forEach ((num) => {
+        sum = sum + num;
+    });
     return sum;
 }
 
